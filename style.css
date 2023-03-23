@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.can{
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+}
+.box-1{
+    width: 60px;
+    height: 60px;
+    float: left;
+    background-color:darkgoldenrod;
+    animation-name: fan;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+.box-2{
+    width: 60px;
+    height: 60px;
+    float: right;
+    background-color:darkgoldenrod;
+    animation-name: fan;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes fan {
+    0%,100%{
+        transform:rotate(25deg);
+    }
+    25%{
+        transform:rotate(500deg);
+    }
+    75%{
+        transform:rotate(180deg);
+    }
+}
